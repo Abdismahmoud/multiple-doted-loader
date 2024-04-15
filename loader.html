@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dotted-loader</title>
+    <link rel="stylesheet" href="loader.css">
+</head>
+
+<body>
+    <div class="dotted-loader"></div>
+    <button>click me</button>
+    <script>
+        let btn = document.querySelector("button");
+        let loader = document.querySelector("div");
+        btn.onclick = function () {
+            // loader.style.transition = "all 0.5s linear";
+            loader.style.opacity = "1";
+            setTimeout(() => {
+                // loader.style.transition = "all 0.5s linear";
+                loader.style.opacity = "0";
+            }, 4000);
+        }
+    </script>
+</body>
+
+</html>
